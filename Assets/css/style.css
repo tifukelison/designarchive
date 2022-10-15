@@ -1,35 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@font-face {
+/*@font-face {
     font-family: 'Archive';
     src: url('/Assets/fonts/Archive-Regular.ttf');
-  }
+  }*/
 * {
     margin: 0;
     padding: 0;box-sizing: border-box;
 }
-.bgColor { 
-    padding: 10px;
-    background-color: #11202f;
+.bg {
+    background-image: url('../Images/welcome1.png');
+    background-size: cover;
+    height:  100%;
+}
+body { 
+    /*padding: 10px;*/
+    background-color: #170c27;
 }
 
-.bgColor .logos {
+.logos {
+    padding: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-.bgColor .logos img {
-    width: 200px;
-    margin-bottom: 50px;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul li {
+    display: inline;
+    margin: 10px;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.logos h1 {
+    font-size: 20px;
+    margin: 5px;
+}
+ .logos a {
+    text-decoration: none;
 }
 
 .welcom {
     font-family: 'Poppins';
     color: white;
     text-align: center;
-    margin: 10px;
+    font-size: 50px;
+
 }
-.welcom .title {
+.welcom .title,.title {
     /* font-family: 'Ar'; */
     background-color: white;
     color: #11202f;
@@ -37,21 +58,33 @@
     margin: 10px;
     padding: 0 5px 0px 5px;
 }
-.title:nth-child(2) {
-    background-color: #11202f;
+.welcom .titles ,.titles{
     color: #89a2dd;
+}
+.title, .titles {
+    font-family: 'Poppins';
+}
+.info {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 .info p {
     color: white;
     font-family: 'Poppins';
     text-align: center;
     margin: 20px;
+    width: 550px;
+
 }
 .buttonDiv a .btn_archive {
     width: 100px;
     background-color: transparent;
 }
-.buttonDiv button,.more { font-family: 'Archive';
+.buttonDiv .button,.more { font-family: 'Archive';
 padding: 10px 20px 10px 20px;
 margin: 10px;
 background-color: #89a2dd;
@@ -64,7 +97,7 @@ color: #11202f;
     align-items: center;
     justify-content: center;
 }
-.buttonDiv button:hover,.more:hover {
+.buttonDiv .button:hover,.more:hover {
     padding: 5px 15px 5px 15px;
     transition: 0.3s;
     color: white;
@@ -78,6 +111,8 @@ color: #11202f;
 .services h1{
     color: #89a2dd;
     font-family: 'Poppins';
+    text-align: center;
+    font-size: 40px;
     
 } .services p {
     color: white;
@@ -107,4 +142,62 @@ background-color: #0a0f14;
 }
 .more {
     margin: 10px 10px 10px 0;
+}
+
+.contact input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact input[type=submit],.contact button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact button {
+    background-color: red;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Poppins';
+  width: 50%;
+  position: absolute;
+  transform: translate(50%,-100%);
+  display: none;
+
+
+}
+.contact input[placeholder],textarea[placeholder]{
+    font-family: 'Poppins';
+}
+.mores {
+    font-family: 'Poppins';
+
+}
+
+@media only screen and (max-width: 800px) {
+  .welcom h1 {
+    font-size: 50px;
+  }
+  .info {
+    margin: auto;
+  }
+  body {
+    background-size: contain;
+  }
 }

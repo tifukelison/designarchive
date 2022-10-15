@@ -8,30 +8,41 @@
     <meta name="keywords" content="Logo Design, Brand Identity Design, Flyer Design, Banner Design, Poster Design, Web Development">
     <meta name="author" content="Tifu Kelison">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.png">
     <title>Design Archive</title>
+    <!-- This is the minified production version of Parse JS -->
+<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <body>
-    <div class="bgColor">
+    <div class="header">
         <div class="logos">
-            <img class="logo" src="./Assets/Images/designarchive1.png" alt="The Design Archive">
-
-        </div>
+            <a href="#"> <h1><span class="title">Design </span><span class="titles">Archive</span></h1>
+</a></div>
+           <ul>
+               <li><a href="#" class="mores">About</a></li>
+               <li><a href="#" class="mores">Work</a></li>
+               <li><a href="#" class="mores">Contact</a></li>
+           </ul>
+        
+    </div>
+        <div class="bg">
         <div class="welcom">
-            <h1>Hello, and welcome to the <span class="title">Design</span><span class="title"> Archive</span></h1>
+            <h1>Welcome to the <br><span class="title">Design</span><span class="titles"> Archive</span></h1>
         </div>
         <div class="info">
-            <p>We are an online design agency located in Bamenda, Cameroon 🇨🇲. Our purpose is to develop visual communication materials for clients to use in advertising and marketing 💘 . </p>
+            <p>We are an online design agency founded in Bamenda, Cameroon <br>🇨🇲. Our purpose is to develop visual communication materials for<br> clients to use in advertising and marketing 💘 . </p>
         </div>
         <div class="buttons">
             <div class="buttonDiv">
                 <!-- Add favicon before button -->
-                <a href="#"><button>See Designs</button></a>
-                <a href="#"><button>Contact</button></a>
+                <a href="https://www.behance.net/tifukelison/projects"><button class="button">See Designs</button></a>
+                <a href="#"><button class="button contactbtn">Contact</button></a>
             </div>
         </div>
         <div class="services">
-            <h1>Our Services</h1>
+            <h1><span class="title">Our </span><span class="titles">Services</span></h1>
             <p>Below are what we can do for you!!!</p>
             <div class="servicesContainer">
                 <div class="card">
@@ -52,7 +63,28 @@
             
             </div>
           
-        </div>
+   
+    
+
     </div>
+        </div>
+        <div class="contact">
+        
+  <form>
+    <label>Name:</label>
+    <input type="text" id="name"placeholder="Your name..">
+
+    <label>Number:</label>
+    <input type="text" id="number"placeholder="(+237) 681 727 001">
+    <label>Message:</label>
+    <textarea id="textarea" placeholder="Enter Message"></textarea>
+
+  
+    <input type="submit" value="Submit">
+    <button class="exitContact">Exit</button>
+  </form>
+    </div>
+
+    <script type="text/javascript" src="./Assets/js/features.js"></script>
 </body>
 </html>
