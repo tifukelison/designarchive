@@ -64,20 +64,13 @@ body {
 .title, .titles {
     font-family: 'Poppins';
 }
-.info {
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-.info p {
+.info p,.infos {
     color: white;
     font-family: 'Poppins';
     text-align: center;
     margin: 20px;
-    width: 550px;
+    padding: 10px;
+    
 
 }
 .buttonDiv a .btn_archive {
@@ -199,5 +192,13 @@ input[type=submit]:hover {
   }
   body {
     background-size: contain;
+  }
+  .header ul {
+    display: none;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
