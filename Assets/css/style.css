@@ -87,8 +87,7 @@ body {
     color: white;
     font-family: 'Poppins';
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 .info p {
   line-height: 2.0rem;
