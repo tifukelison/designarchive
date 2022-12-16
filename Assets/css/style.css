@@ -5,14 +5,15 @@
   }
 * {
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
-.bg {
+/* .bg {
     background-image: url('../Images/welcome1.png');
     background-size: cover;
     height:  100%;
-}
-body { 
+} */
+body {
     /*padding: 10px;*/
     background-color: #170c27;
 }
@@ -20,12 +21,21 @@ body {
 .logos {
     padding: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.logos img {
+  width: 50px;
 }
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 .header ul li {
     display: inline;
@@ -34,6 +44,15 @@ body {
 .header ul li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    background: #89a2dd;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header ul li a:hover {
+  transition: 100ms;
+  background: #11202f;
+  color: white;
 }
 .logos h1 {
     font-size: 20px;
@@ -47,7 +66,7 @@ body {
     font-family: 'Poppins';
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 .welcom .title,.title {
@@ -69,15 +88,30 @@ body {
     font-family: 'Poppins';
     text-align: center;
     margin: 20px;
-    padding: 10px;
-    
-
+    padding: 20px;
+}
+.info p {
+  line-height: 2.0rem;
+  font-size: 20px;
+}
+.diff {
+  background: #89a2dd;
+  margin: 5px;
+  border-radius: 5px;
+  color: #11202f;
+  padding: 0px 2px;
+  cursor: pointer;
+}
+.diff:hover{
+  background: #11202f;
+  color: #89a2dd;
+  transition: 1s;
 }
 .buttonDiv a .btn_archive {
     width: 100px;
     background-color: transparent;
 }
-.buttonDiv .button,.more { font-family: 'Archive';
+.buttonDiv .button,.more,.talk button { font-family: 'Archive';
 padding: 10px 20px 10px 20px;
 margin: 10px;
 background-color: #89a2dd;
@@ -90,7 +124,7 @@ color: #11202f;
     align-items: center;
     justify-content: center;
 }
-.buttonDiv .button:hover,.more:hover {
+.buttonDiv .button:hover,.more:hover,.talk button:hover {
     padding: 5px 15px 5px 15px;
     transition: 0.3s;
     color: white;
@@ -106,18 +140,38 @@ color: #11202f;
     font-family: 'Poppins';
     text-align: center;
     font-size: 40px;
-    
+
 } .services p {
     color: white;
     font-family: 'Poppins';
-    
+
 }
 .servicesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
- 
+
+}
+.talk {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.talk h2 {
+  font-family: 'Poppins';
+  color: white;
+}
+.talk button {
+  color: white;
+}
+.question {
+  background: #89a2dd;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 5px;
+
 }
 .servicesContainer .card {
     width: 400px;
@@ -133,8 +187,11 @@ background-color: #0a0f14;
     font-family: 'Archive';
     /* text-align:center; */
 }
+.servicesContainer .card p {
+  padding: 10px 10px;
+}
 .more {
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px ;
 }
 
 .contact input[type=text], textarea {
@@ -193,12 +250,22 @@ input[type=submit]:hover {
   body {
     background-size: contain;
   }
-  .header ul {
-    display: none;
-  }
   .header{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  background: #11202f;
+}
+.footer p {
+  padding: 10px;
 }
